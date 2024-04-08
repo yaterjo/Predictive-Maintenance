@@ -1,5 +1,14 @@
 # Predictive Maintenance Using Deep Learning
 
+## Table of Contents
+- [Business Problem](#business-problem)
+- [Data Insights](#data-insights)
+- [Data Preparation and EDA](#data-preparation-and-eda)
+- [Models](#models)
+- [Results](#results)
+- [Recommended Next Steps](#recommended-next-steps)
+- [Requirements](#requirements)
+
 ## Project Overview
 Predictive maintenance stands as a cornerstone in manufacturing and equipment-based industries, directly impacting operational efficiency and cost management. This project aims to harness the power of deep learning to forecast equipment failures, leveraging historical sensor data. The goal is to preemptively signal potential breakdowns, thereby mitigating downtime and streamlining maintenance protocols.
 
