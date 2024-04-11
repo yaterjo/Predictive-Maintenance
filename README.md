@@ -1,5 +1,5 @@
 # Predictive Maintenance Using Deep Learning
-
+![Preventive Maintenance Pic](Pics/preventivemaintenancepic.jpg)
 ## Table of Contents
 - [Business Problem](#business-problem)
 - [Data Insights](#data-insights)
