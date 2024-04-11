@@ -35,7 +35,8 @@ Although the initial results were promising, we plan to refine our approach furt
 ## Requirements
 - Python 3.7+
 - Libraries: pandas, numpy, sklearn, tensorflow, keras, matplotlib, seaborn, scikit-learn
-- Data: Access to historical sensor data from the target machinery. 
+- Data: Access to historical sensor data from the target machinery.
+- [Sensor Data Set](http://https://www.kaggle.com/datasets/nphantawee/pump-sensor-data)
 
 To replicate the findings or explore the models, clone this repository and ensure you meet the software and data requirements listed above.
 
