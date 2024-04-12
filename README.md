@@ -23,12 +23,11 @@ In the industrial sector, the malfunction of machinery is a common yet critical 
 
 ## Data Insights
 We sourced our data from multiple sensors attached to industrial machines. These sensors continuously monitored various operational parameters, such as vibrations, temperature, and noise levels, among others. Each parameter had its own scale and range; some recorded values in the thousands while others were in single digits. The disparity in scale among sensors could potentially skew the predictive model, as larger numbers might unduly influence the outcome. To address this, we applied scaling techniques to normalize the data, ensuring each sensor reading contributed equally to the analysis.
-![sensordistro](Pics/distributioncapstone.JPG)
-![heatmap](Pics/heatmapcapstone.JPG)
 
 ## Data Preparation and EDA
 Our initial steps involved rigorous data cleaning to ensure quality inputs for our models. We meticulously sifted through the dataset, stripping out irrelevant columns that bore no relation to equipment health and imputing missing values to maintain data integrity. Following the cleaning, we dived into exploratory data analysis (EDA), which involved crafting a series of plots to visualize the data distribution. This helped us detect any unusual patterns or outliers that could affect our predictive modeling. The EDA phase was critical, as it laid the foundation for feature selection and model training.
-
+![sensordistro](Pics/distributioncapstone.JPG)
+![heatmap](Pics/heatmapcapstone.JPG)
 ## Models
 Both models yielded impressively high accuracy rates, with the neural network and the Gradient Boosting Classifier consistently predicting machine failures with near-perfect precision. However, such exceptional performance triggered our diligence to ensure that our models were genuinely effective and not a result of data leakage or a bias in the dataset. We scrutinized the models' performance across various metrics, confirming that the results were reliable and indicative of the models' robust predictive capabilities.
 
@@ -37,7 +36,7 @@ Concurrently, we experimented with Gradient Boosting Classifiers, leveraging the
 
 ## Results
 Both models yielded impressively high accuracy rates, with the neural network and the Gradient Boosting Classifier consistently predicting machine failures with near-perfect precision. However, such exceptional performance triggered our diligence to ensure that our models were genuinely effective and not a result of data leakage or a bias in the dataset. We scrutinized the models' performance across various metrics, confirming that the results were reliable and indicative of the models' robust predictive capabilities.
-![Trend](hyperparametercapstone.JPG)
+![Trend](Pics/hyperparametercapstone.JPG)
 ## Recommended Next Steps
 Although the initial results were promising, we plan to refine our approach further. We aim to delve into the models' interpretability by examining the feature importance of the sensor readings, which will help identify which sensors are most predictive of failure. Moreover, we plan to explore additional modeling techniques, such as deep learning and ensemble methods, to compare and potentially improve our predictions. Rigorous validation techniques, including cross-validation and real-world testing, will also be employed to affirm the models' reliability.
 
