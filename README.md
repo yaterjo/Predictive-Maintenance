@@ -60,15 +60,15 @@ To set up the environment to run this project, follow these steps:
 ```bash
 pip install -r requirements.txt
 
-4. **Include Version Control**:
+2. **Include Version Control**:
    - Use Git for version control and include a `.gitignore` file to avoid pushing unnecessary files to the repository.
    - Make regular commits with clear messages describing the changes.
 
-5. **Clear Folder Structure**:
+3. **Clear Folder Structure**:
    - Use a logical folder structure and include a directory tree in your `README.md`.
 
 ```markdown
-## Project Structure
+## Example of a Project Structure
 project/
 │
 ├── data/ # Folder for datasets
@@ -86,4 +86,8 @@ project/
 │
 ├── requirements.txt # Python dependencies
 └── README.md # Project README with installation and running instructions
+
+
+4. **Use Docker** (Optional):
+   - For complex projects, consider using Docker to containerize your environment, ensuring even greater reproducibility across different systems.
 
