@@ -43,8 +43,47 @@ Although the initial results were promising, we plan to refine our approach furt
 ## Requirements
 - Python 3.7+
 - Libraries: pandas, numpy, sklearn, tensorflow, keras, matplotlib, seaborn, scikit-learn
+- numpy==1.20.3
+- scikit-learn==0.24.2
+- pandas==1.2.4
+- tensorflow==2.5.0
+- keras==2.4.3
+- matplotlib==3.4.2
 - Data: Access to historical sensor data from the target machinery.
 - [Sensor Data Set](http://https://www.kaggle.com/datasets/nphantawee/pump-sensor-data)
 
 To replicate the findings or explore the models, clone this repository and ensure you meet the software and data requirements listed above.
+## Installation
+To set up the environment to run this project, follow these steps:
+
+1. Install required Python packages:
+```bash
+pip install -r requirements.txt
+
+4. **Include Version Control**:
+   - Use Git for version control and include a `.gitignore` file to avoid pushing unnecessary files to the repository.
+   - Make regular commits with clear messages describing the changes.
+
+5. **Clear Folder Structure**:
+   - Use a logical folder structure and include a directory tree in your `README.md`.
+
+```markdown
+## Project Structure
+project/
+│
+├── data/ # Folder for datasets
+│ ├── synthetic.csv # Synthetic dataset for demonstration
+│ └── ...
+│
+├── notebooks/ # Jupyter notebooks for exploration
+│ ├── EDA.ipynb # Exploratory Data Analysis notebook
+│ └── ...
+│
+├── src/ # Source code for the project
+│ ├── init.py
+│ ├── models.py # Model definitions
+│ └── ...
+│
+├── requirements.txt # Python dependencies
+└── README.md # Project README with installation and running instructions
 
