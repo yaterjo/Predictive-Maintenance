@@ -50,7 +50,7 @@ Although the initial results were promising, we plan to refine our approach furt
 - keras==2.4.3
 - matplotlib==3.4.2
 - Data: Access to historical sensor data from the target machinery.
-- [Sensor Data Set](http://https://www.kaggle.com/datasets/nphantawee/pump-sensor-data)
+- [Sensor Data Set](https://www.kaggle.com/datasets/nphantawee/pump-sensor-data/code)
 
 To replicate the findings or explore the models, clone this repository and ensure you meet the software and data requirements listed above.
 ## Installation
@@ -68,7 +68,7 @@ pip install -r requirements.txt
    - Use a logical folder structure and include a directory tree in your `README.md`.
 
 ```markdown
-## Example of a Project Structure
+## Example of a Project Structure(not this particular one)
 project/
 │
 ├── data/ # Folder for datasets
