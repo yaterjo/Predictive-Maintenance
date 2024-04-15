@@ -22,16 +22,14 @@ This approach is aligned with industry trends where predictive maintenance is be
 In the industrial sector, the malfunction of machinery is a common yet critical issue that can lead to significant production halts and financial losses. To address this, our project set out to create a predictive tool using machine learning to foresee potential failures. Our aim was to offer a proactive solution that could alert maintenance teams to intervene before breakdowns occur, optimizing machine uptime and saving on repair costs.
 
 ## Data Insights
-We sourced our data from multiple sensors attached to industrial machines. These sensors continuously monitored various operational parameters, such as vibrations, temperature, and noise levels, among others. Each parameter had its own scale and range; some recorded values in the thousands while others were in single digits. The disparity in scale among sensors could potentially skew the predictive model, as larger numbers might unduly influence the outcome. To address this, we applied scaling techniques to normalize the data, ensuring each sensor reading contributed equally to the analysis.
+In our exploration of the machine sensor data, we discovered that certain sensors were significantly more influential in predicting machine health. The data, drawn from various sensors, suggested patterns that our predictive models could leverage to determine the normal operating parameters and potential faults. We specifically noticed that sensors like sensor_04 and sensor_10 had more substantial variability in their readings, directly correlating to the machine's status changes. These insights from the data set the stage for us to build a robust model, aiming for an accurate and early diagnosis of potential machine issues that could prevent costly downtimes.
 
 ## Data Preparation and EDA
-Our initial steps involved rigorous data cleaning to ensure quality inputs for our models. We meticulously sifted through the dataset, stripping out irrelevant columns that bore no relation to equipment health and imputing missing values to maintain data integrity. Following the cleaning, we dived into exploratory data analysis (EDA), which involved crafting a series of plots to visualize the data distribution. This helped us detect any unusual patterns or outliers that could affect our predictive modeling. The EDA phase was critical, as it laid the foundation for feature selection and model training.
+Before diving into modeling, we meticulously prepared the data. This involved cleaning up missing values and unnecessary columns to ensure the quality and integrity of our dataset. For instance, we merged statuses like 'broken' and 'recovering' into a single class to simplify our target variable, and we filled in missing sensor readings with median values to maintain consistency. A key part of our exploratory data analysis was visualizing the distribution of machine statuses and understanding the correlations between different sensor readings. This was a vital step, as it laid the groundwork for building our predictive models by providing a clearer picture of the underlying patterns and relationships within the data.
 ![sensordistro](Pics/distromachstat.JPG)
 ![heatmap](Pics/heatmapcapstone.JPG)
 ## Models
-Both models yielded impressively high accuracy rates, with the neural network and the Gradient Boosting Classifier consistently predicting machine failures with near-perfect precision. However, such exceptional performance triggered our diligence to ensure that our models were genuinely effective and not a result of data leakage or a bias in the dataset. We scrutinized the models' performance across various metrics, confirming that the results were reliable and indicative of the models' robust predictive capabilities.
-
-Concurrently, we experimented with Gradient Boosting Classifiers, leveraging their prowess in handling non-linear relationships. This approach builds an ensemble of decision trees sequentially, with each tree learning to correct the errors of its predecessor. By combining the predictions of multiple weak learners, we constructed a more accurate and stable strong learner.
+We put a series of machine learning models to the test, focusing on ensemble methods like Bagging, AdaBoost, Stacking, and Voting Classifiers. Each brought its own strengths to the table, whether it was through boosting, where models sequentially learned from the mistakes of previous ones, or stacking, where models' predictions were combined in a sophisticated manner. Our aim was to go beyond individual model performance, looking for an approach that not only provided high accuracy but also showed consistency across different segments of data, which led us to cross-validation techniques for model reliability checks.
 
 ![Fold1](Pic/fold1.JPG)
 ![Finalfold](Pics/fold5.JPG)
@@ -39,16 +37,14 @@ Concurrently, we experimented with Gradient Boosting Classifiers, leveraging the
 ![fnnaccloss](Pics/fnnevalaccuracyloss.JPG)
 
 ## Results
-Both models yielded impressively high accuracy rates, with the neural network and the Gradient Boosting Classifier consistently predicting machine failures with near-perfect precision. However, such exceptional performance triggered our diligence to ensure that our models were genuinely effective and not a result of data leakage or a bias in the dataset. We scrutinized the models' performance across various metrics, confirming that the results were reliable and indicative of the models' robust predictive capabilities.
-
+The results were telling. Our cross-validation approach showed that the models maintained a high level of accuracy across different folds of data, reinforcing their reliability and robustness. The Receiver Operating Characteristic (ROC) curves echoed these findings, with areas under the curve (AUC) being close to 1, indicating excellent predictive performance. The SHAP values, a measure of feature impact on predictions, gave us confidence in understanding which sensors the models deemed most critical, aligning with our initial data insights.
 
 ![Comparison](Pics/ensemblecomparison.JPG)
 ![Shap](Pics/shapevalbaseline.JPG)
 ![Shapfinal](Pics/shapfinal.JPG)
 
 ## Recommended Next Steps
-Although the initial results were promising, we plan to refine our approach further. We aim to delve into the models' interpretability by examining the feature importance of the sensor readings, which will help identify which sensors are most predictive of failure. Moreover, we plan to explore additional modeling techniques, such as deep learning and ensemble methods, to compare and potentially improve our predictions. Rigorous validation techniques, including cross-validation and real-world testing, will also be employed to affirm the models' reliability.
-
+Based on our findings, we recommend further investigation into the high-impact sensors. Continuous monitoring and real-time analysis of these could yield predictive maintenance schedules, averting failures before they occur. Furthermore, the adoption of the model into a production environment would warrant setting up a pipeline for periodic retraining, ensuring the model stays updated with the latest data and trends.
 ## Requirements
 - Python 3.7+
 - Libraries: pandas, numpy, sklearn, tensorflow, keras, matplotlib, seaborn, scikit-learn
