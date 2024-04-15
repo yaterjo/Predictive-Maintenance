@@ -64,17 +64,16 @@ To replicate the findings or explore the models, clone this repository and ensur
 To set up the environment to run this project, follow these steps:
 
 1. Install required Python packages:
-```bash
+
 pip install -r requirements.txt
 
-2. **Include Version Control**:
+2. Include Version Contro:
    - Use Git for version control and include a `.gitignore` file to avoid pushing unnecessary files to the repository.
    - Make regular commits with clear messages describing the changes.
 
-3. **Clear Folder Structure**:
+3. Clear Folder Structure:
    - Use a logical folder structure and include a directory tree in your `README.md`.
 
-```markdown
 ## Example of a Project Structure(not this particular one)
 project/
 │
@@ -95,6 +94,6 @@ project/
 └── README.md # Project README with installation and running instructions
 
 
-4. **Use Docker** (Optional):
+4. Use Docker (Optional):
    - For complex projects, consider using Docker to containerize your environment, ensuring even greater reproducibility across different systems.
 
