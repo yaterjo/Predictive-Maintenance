@@ -31,10 +31,12 @@ Before diving into modeling, we meticulously prepared the data. This involved cl
 ## Models
 We put a series of machine learning models to the test, focusing on ensemble methods like Bagging, AdaBoost, Stacking, and Voting Classifiers. Each brought its own strengths to the table, whether it was through boosting, where models sequentially learned from the mistakes of previous ones, or stacking, where models' predictions were combined in a sophisticated manner. Our aim was to go beyond individual model performance, looking for an approach that not only provided high accuracy but also showed consistency across different segments of data, which led us to cross-validation techniques for model reliability checks.
 
+![fnnaccloss](Pics/fnnevalaccuracyloss.JPG)
+![ROC](Pics/roceval.JPG)
 ![Fold1](Pics/fold1.JPG)
 ![Finalfold](Pics/fold5.JPG)
-![ROC](Pics/roceval.JPG)
-![fnnaccloss](Pics/fnnevalaccuracyloss.JPG)
+
+
 
 ## Results
 The results were telling. Our cross-validation approach showed that the models maintained a high level of accuracy across different folds of data, reinforcing their reliability and robustness. The Receiver Operating Characteristic (ROC) curves echoed these findings, with areas under the curve (AUC) being close to 1, indicating excellent predictive performance. The SHAP values, a measure of feature impact on predictions, gave us confidence in understanding which sensors the models deemed most critical, aligning with our initial data insights.
