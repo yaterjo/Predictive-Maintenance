@@ -87,6 +87,3 @@ pip install -r requirements.txt
 
 
 
-4. Use Docker (Optional):
-   - For complex projects, consider using Docker to containerize your environment, ensuring even greater reproducibility across different systems.
-
