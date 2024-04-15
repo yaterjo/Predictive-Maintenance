@@ -74,24 +74,17 @@ pip install -r requirements.txt
 3. Clear Folder Structure:
    - Use a logical folder structure and include a directory tree in your `README.md`.
 
-## Example of a Project Structure(not this particular one)
-project/
-│
-├── data/ # Folder for datasets
-│ ├── synthetic.csv # Synthetic dataset for demonstration
-│ └── ...
-│
-├── notebooks/ # Jupyter notebooks for exploration
-│ ├── EDA.ipynb # Exploratory Data Analysis notebook
-│ └── ...
-│
-├── src/ # Source code for the project
-│ ├── init.py
-│ ├── models.py # Model definitions
-│ └── ...
-│
-├── requirements.txt # Python dependencies
-└── README.md # Project README with installation and running instructions
+## Project Structure
+- Pics/
+  - Add files via upload/
+    - [uploaded image files]
+- .gitignore
+- Capstone3.0.ipynb
+- CapstoneFinal3.0.ipynb
+- README.md
+- White and Purple Professional Technology Startup Business Company Presentation.pdf
+- archive (4).zip
+
 
 
 4. Use Docker (Optional):
