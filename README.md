@@ -26,14 +26,20 @@ In our exploration of the machine sensor data, we discovered that certain sensor
 
 ## Data Preparation and EDA
 Before diving into modeling, we meticulously prepared the data. This involved cleaning up missing values and unnecessary columns to ensure the quality and integrity of our dataset. For instance, we merged statuses like 'broken' and 'recovering' into a single class to simplify our target variable, and we filled in missing sensor readings with median values to maintain consistency. A key part of our exploratory data analysis was visualizing the distribution of machine statuses and understanding the correlations between different sensor readings. This was a vital step, as it laid the groundwork for building our predictive models by providing a clearer picture of the underlying patterns and relationships within the data.
+
 ![sensordistro](Pics/distromachstat.JPG)
+
 ![heatmap](Pics/heatmapcapstone.JPG)
+
 ## Models
 We put a series of machine learning models to the test, focusing on ensemble methods like Bagging, AdaBoost, Stacking, and Voting Classifiers. Each brought its own strengths to the table, whether it was through boosting, where models sequentially learned from the mistakes of previous ones, or stacking, where models' predictions were combined in a sophisticated manner. Our aim was to go beyond individual model performance, looking for an approach that not only provided high accuracy but also showed consistency across different segments of data, which led us to cross-validation techniques for model reliability checks.
 
 ![fnnaccloss](Pics/fnnevalaccuracyloss.JPG)
+
 ![ROC](Pics/roceval.JPG)
+
 ![Fold1](Pics/fold1.JPG)
+
 ![Finalfold](Pics/fold5.JPG)
 
 
@@ -42,7 +48,9 @@ We put a series of machine learning models to the test, focusing on ensemble met
 The results were telling. Our cross-validation approach showed that the models maintained a high level of accuracy across different folds of data, reinforcing their reliability and robustness. The Receiver Operating Characteristic (ROC) curves echoed these findings, with areas under the curve (AUC) being close to 1, indicating excellent predictive performance. The SHAP values, a measure of feature impact on predictions, gave us confidence in understanding which sensors the models deemed most critical, aligning with our initial data insights.
 
 ![Comparison](Pics/ensemblecomparison.JPG)
+
 ![Shap](Pics/shapevalbaseline.JPG)
+
 ![Shapfinal](Pics/shapfinal.JPG)
 
 ## Recommended Next Steps
