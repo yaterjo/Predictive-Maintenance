@@ -35,24 +35,18 @@ Before diving into modeling, we meticulously prepared the data. This involved cl
 ## Models
 We put a series of machine learning models to the test. We started with some regression models as a baseline indicator then focusing on ensemble methods like Bagging, AdaBoost, XGBoost, Stacking, and Voting Classifiers. Each brought its own strengths to the table, whether it was through boosting, where models sequentially learned from the mistakes of previous ones, or stacking, where models' predictions were combined in a sophisticated manner. Our aim was to go beyond individual model performance, looking for an approach that not only provided high accuracy but also showed consistency across different segments of data, which led us to cross-validation techniques, such as gridsearch, for model reliability checks.
 
-![](Pics/)
+![baseline](Pics/baselinelogandforest.JPG)
 
-![](Pics/)
+![roc](Pics/ROCfinal.JPG)
 
-![](Pics/)
-
-![](Pics/)
+![Final](Pics/Ensemblefinal.JPG)
 
 
 
 ## Results
 The results were good all around. Our cross-validation approach showed that the models maintained a high level of accuracy across different folds of data, reinforcing their reliability and robustness. The Receiver Operating Characteristic (ROC) curves echoed these findings, with areas under the curve (AUC) being close to 1, indicating excellent predictive performance. The ensemble methods showed a measure of success with increasing the overall successsfeature impact on predictions. All in all the models were consistent with each model.
 
-![](Pics/)
 
-![](Pics/)
-
-![](Pics/)
 
 ## Recommended Next Steps
 Based on our findings, we recommend further investigation into the high-impact sensors and time series to drill down more into another aspect of predicting their status. Continuous monitoring and real-time analysis of these could yield predictive maintenance schedules, averting failures before they occur. Furthermore, the adoption of the model into a production environment would warrant setting up a pipeline for periodic retraining, ensuring the model stays updated with the latest data and trends.
