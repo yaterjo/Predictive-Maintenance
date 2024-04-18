@@ -46,7 +46,7 @@ We put a series of machine learning models to the test. We started with some reg
 
 
 ## Results
-The results were telling. Our cross-validation approach showed that the models maintained a high level of accuracy across different folds of data, reinforcing their reliability and robustness. The Receiver Operating Characteristic (ROC) curves echoed these findings, with areas under the curve (AUC) being close to 1, indicating excellent predictive performance. The SHAP values, a measure of feature impact on predictions, gave us confidence in understanding which sensors the models deemed most critical, aligning with our initial data insights.
+The results were good all around. Our cross-validation approach showed that the models maintained a high level of accuracy across different folds of data, reinforcing their reliability and robustness. The Receiver Operating Characteristic (ROC) curves echoed these findings, with areas under the curve (AUC) being close to 1, indicating excellent predictive performance. The ensemble methods showed a measure of success with increasing the overall successsfeature impact on predictions. All in all the models were consistent with each model.
 
 ![](Pics/)
 
@@ -55,7 +55,7 @@ The results were telling. Our cross-validation approach showed that the models m
 ![](Pics/)
 
 ## Recommended Next Steps
-Based on our findings, we recommend further investigation into the high-impact sensors. Continuous monitoring and real-time analysis of these could yield predictive maintenance schedules, averting failures before they occur. Furthermore, the adoption of the model into a production environment would warrant setting up a pipeline for periodic retraining, ensuring the model stays updated with the latest data and trends.
+Based on our findings, we recommend further investigation into the high-impact sensors and time series to drill down more into another aspect of predicting their status. Continuous monitoring and real-time analysis of these could yield predictive maintenance schedules, averting failures before they occur. Furthermore, the adoption of the model into a production environment would warrant setting up a pipeline for periodic retraining, ensuring the model stays updated with the latest data and trends.
 ## Requirements
 - Python 3.7+
 - Libraries: pandas, numpy, sklearn, tensorflow, keras, matplotlib, seaborn, scikit-learn
