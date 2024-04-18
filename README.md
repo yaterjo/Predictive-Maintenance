@@ -27,7 +27,7 @@ In our exploration of the machine sensor data, we discovered that certain sensor
 ## Data Preparation and EDA
 Before diving into modeling, we meticulously prepared the data. This involved cleaning up missing values and unnecessary columns to ensure the quality and integrity of our dataset. For instance, we merged statuses like 'broken' and 'recovering' into a single class to simplify our target variable, and we filled in missing sensor readings with median values to maintain consistency. A key part of our exploratory data analysis was visualizing the distribution of machine statuses and understanding the correlations between different sensor readings. This was a vital step, as it laid the groundwork for building our predictive models by providing a clearer picture of the underlying patterns and relationships within the data.
 
-![Mode](Pics/foursensors.jpg)
+![Mode](Pics/foursensors.JPG)
 
 ![heatmap](Pics/)
 
