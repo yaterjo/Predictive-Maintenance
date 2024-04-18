@@ -1,4 +1,5 @@
-# Predictive Maintenance Using Deep Learning
+# Predictive Maintenance 
+# Water Pumps
 ![Preventive Maintenance Pic](Pics/preventivemaintenancepic.jpg)
 I’m Johnathan Yater, a data scientist combining business management know-how with machine learning expertise to solve critical industrial challenges. My latest deep learning model taps into historical sensor data to predict machine failures with high accuracy, allowing businesses to preemptively act, avoiding costly downtime and enhancing operational efficiency.
 
